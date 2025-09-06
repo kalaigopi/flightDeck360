@@ -1,0 +1,9 @@
+import axios from "axios";
+function BookingForm() {
+  // form state...
+  async function handleSubmit() {
+    await axios.post("/api/bookings", {/* form data */}, { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } });
+    // handle response...
+  }
+  // JSX form...
+}
